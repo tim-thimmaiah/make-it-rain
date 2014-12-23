@@ -1,6 +1,6 @@
 # Make It Rain
 
-Fork of fitztrev's Make It Rain for Node.js + Hipchat
+Fork of @fitztrev's awesome Make It Rain. Refactored for Node.js + Hipchat.
 
 Get a random "make it rain" gif every time you get paid through Stripe.
 
