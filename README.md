@@ -6,7 +6,7 @@ Get a random "make it rain" gif every time you get paid through Stripe.
 
 Works with HipChat.
 
-![screenshot](http://imgur.com/g74s4Nm)
+![screenshot](http://i.imgur.com/g74s4Nm.gif)
 
 ## Quick Hipchat Test
 
