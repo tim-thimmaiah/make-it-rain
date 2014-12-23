@@ -17,8 +17,6 @@ module.exports = function(app) {
             var url = 'https://fitztrev.github.io/make-it-rain/gifs.json';
 			var gifs = JSON.parse(url);
 
-            var url = "https://fitztrev.github.io/make-it-rain/gifs.json";
-
             //Easily get the json array
 			request({
 				url: url,
