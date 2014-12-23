@@ -2,8 +2,10 @@ var request = require('request');
 var Hipchatter = require('hipchatter');
 var Stripe = require('stripe');
 
-var stripe = Stripe(''); // Stripe Secret Key
-var hipchat = new Hipchatter(''); //Hipchat Auth Token
+var stripe = Stripe(''); //Stripe Secret
+var hipchat = new Hipchatter(''); // HipChat Auth Token
+
+var amount = 1000000;
 
 module.exports = function(app) {
 	var error = app.settings.error;
@@ -14,8 +16,7 @@ module.exports = function(app) {
         },
         'charge.succeded': function(event, callback) {
             var amount = event.data.object.amount;
-            var url = 'https://fitztrev.github.io/make-it-rain/gifs.json';
-			var gifs = JSON.parse(url);
+            var url = "https://fitztrev.github.io/make-it-rain/gifs.json";
 
             //Easily get the json array
 			request({
