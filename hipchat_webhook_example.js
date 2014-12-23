@@ -19,7 +19,7 @@ request({
         console.log(gif); // Print the json response
         var hipchatMessage = 'Tim' + ' just paid $' + amount + '<br><img src="' + gif + '"/>';
 
-        return hipchat.notify('ToneDen Team', {
+        return hipchat.notify('Room Name', {
             color: 'green',
             message: hipchatMessage,
             notify: true,
